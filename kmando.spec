@@ -13,6 +13,7 @@ BuildRequires:	QtGui-devel
 BuildRequires:	QtOpenGL-devel
 BuildRequires:	blas
 BuildRequires:	boost-array-devel
+BuildRequires:	boost-call_traits-devel
 BuildRequires:	boost-devel
 BuildRequires:	boost-uBLAS-devel
 BuildRequires:	f2c
