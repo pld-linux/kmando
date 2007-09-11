@@ -9,13 +9,12 @@ License:	GPL
 Group:		Applications/Multimedia
 URL:		http://vision.eng.shu.ac.uk/mediawiki/index.php/Interactive_Camera-Projector_System
 #BuildRequires:	Mesa-devel
-BuildRequires:	QtCore-devel
 BuildRequires:	QtGui-devel
 BuildRequires:	QtOpenGL-devel
-BuildRequires:	autoconf
-BuildRequires:	automake
 BuildRequires:	blas
-BuildRequires:	boost-devel >= 1.33
+BuildRequires:	boost-array-devel
+BuildRequires:	boost-devel
+BuildRequires:	boost-uBLAS-devel
 BuildRequires:	f2c
 BuildRequires:	fftw3-devel
 #BuildRequires:	freeglut-devel
@@ -26,8 +25,6 @@ BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 BuildRequires:	libxslt
 BuildRequires:	qt4-build
-#BuildRequires:	qt4-qmake
-#BuildRequires:	update-desktop-files
 Requires:	blas
 Requires:	boost
 Requires:	fftw3
