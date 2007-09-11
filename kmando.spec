@@ -1,29 +1,32 @@
-%define rversion 1.4
 %define rname mando
 Summary:	Interactive Camera-Projector System
 Name:		kmando
 Version:	1.4
 Release:	0.1
-Source0:	http://vision.eng.shu.ac.uk/jan/mando-1.4.tar.bz2
+Source0:	http://vision.eng.shu.ac.uk/jan/mando-%{version}.tar.bz2
 # Source0-md5:	d5f6718dda7bbaf361469428f19f8e66
 License:	GPL
 Group:		Applications/Multimedia
 URL:		http://vision.eng.shu.ac.uk/mediawiki/index.php/Interactive_Camera-Projector_System
 #BuildRequires:	Mesa-devel
+BuildRequires:	QtCore-devel
+BuildRequires:	QtGui-devel
+BuildRequires:	QtOpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	blas
-BuildRequires:	boost-devel
-#BuildRequires:	f2c
+BuildRequires:	boost-devel >= 1.33
+BuildRequires:	f2c
 BuildRequires:	fftw3-devel
 #BuildRequires:	freeglut-devel
-#BuildRequires:	gcc-fortran
+BuildRequires:	gcc-g77
 BuildRequires:	lapack
 #BuildRequires:	libgfortran41
-#BuildRequires:	libqt4-devel >= 4.2.90
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 BuildRequires:	libxslt
+BuildRequires:	qt4-build
+#BuildRequires:	qt4-qmake
 #BuildRequires:	update-desktop-files
 Requires:	blas
 Requires:	boost
@@ -42,7 +45,7 @@ physical pointer (e.g. a pen) which is then used to virtually move the
 X11 pointer. Point-and-click functionality has also been implemented.
 
 %prep
-%setup -q -n %{rname}-%{rversion}
+%setup -q -n %{rname}-%{version}
 
 %build
 %configure
