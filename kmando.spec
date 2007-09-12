@@ -1,5 +1,5 @@
 %define rname mando
-Summary:	Interactive Camera-Projector System
+Summary:	Software to control the mouse pointer in a projector using a webcam
 Name:		kmando
 Version:	1.4
 Release:	0.1
