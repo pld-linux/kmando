@@ -2,9 +2,10 @@
 Summary:	Software to control the mouse pointer in a projector using a webcam
 Name:		kmando
 Version:	1.4
-Release:	0.1
+Release:	0.2
 Source0:	http://vision.eng.shu.ac.uk/jan/mando-%{version}.tar.bz2
 # Source0-md5:	d5f6718dda7bbaf361469428f19f8e66
+Source1:	%{name}.desktop
 License:	GPL
 Group:		Applications/Multimedia
 URL:		http://vision.eng.shu.ac.uk/mediawiki/index.php/Interactive_Camera-Projector_System
@@ -56,20 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 install -D mandologo.png $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/64x64/apps/%{name}.png
 install -d $RPM_BUILD_ROOT%{_desktopdir}/kde
-cat > $RPM_BUILD_ROOT%{_desktopdir}/kde/%{name}.desktop <<EOF
-[Desktop Entry]
-Encoding=UTF-8
-GenericName=Interactive Camera-Projector System
-Version=%{version}
-Type=Application
-Exec=%{rname}
-Icon=%{name}.png
-Terminal=false
-Name=Mando
-Comment=Control the mouse pointer in a projector using a webcam
-StartupNotify=true
-Categories=Qt;KDE;Utility;Accessibility;
-EOF
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/kde
 
 %clean
 rm -rf "$RPM_BUILD_ROOT"
