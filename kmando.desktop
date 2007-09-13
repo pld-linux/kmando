@@ -7,5 +7,6 @@ Icon=kmando.png
 Terminal=false
 Name=Mando
 Comment=Control the mouse pointer in a projector using a webcam
+Comment[pl]=Sterowanie wskaźnikiem myszy w projektorze korzystającym z webcam
 StartupNotify=true
 Categories=Qt;KDE;Utility;Accessibility;
