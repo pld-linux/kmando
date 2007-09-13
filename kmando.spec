@@ -1,5 +1,6 @@
 %define rname mando
 Summary:	Software to control the mouse pointer in a projector using a webcam
+Summary(pl.UTF-8):	Oprogramowanie sterujące wskaźnikiem myszy w projektorze korzystającym z webcam
 Name:		kmando
 Version:	1.4
 Release:	0.2
