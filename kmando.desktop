@@ -1,9 +1,8 @@
 [Desktop Entry]
-Encoding=UTF-8
 GenericName=Interactive Camera-Projector System
 Type=Application
 Exec=mando
-Icon=kmando.png
+Icon=kmando
 Terminal=false
 Name=Mando
 Comment=Control the mouse pointer in a projector using a webcam
