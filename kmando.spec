@@ -61,7 +61,7 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}/kde
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/kde
 
 %clean
-rm -rf "$RPM_BUILD_ROOT"
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
