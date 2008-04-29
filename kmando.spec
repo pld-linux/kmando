@@ -15,10 +15,7 @@ BuildRequires:	OpenGL-glut-devel
 BuildRequires:	QtGui-devel >= 4.3
 BuildRequires:	QtOpenGL-devel >= 4.3
 BuildRequires:	blas-devel
-BuildRequires:	boost-array-devel
-BuildRequires:	boost-call_traits-devel
-BuildRequires:	boost-devel
-BuildRequires:	boost-uBLAS-devel
+BuildRequires:	boost-devel >= 1.35.0
 BuildRequires:	f2c
 BuildRequires:	fftw3-devel
 BuildRequires:	gcc-fortran
